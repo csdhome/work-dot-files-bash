@@ -98,7 +98,7 @@ fi
 export LC_ALL=en_US.UTF-8
 # export VIMRUNTIME=~/.vim_runtime
 if [ -d /Users/ ]; then
-    PATH=/Users/jhammond/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+    PATH=/Users/chansen/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 fi
 source ~/.bash_extended
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
