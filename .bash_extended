@@ -302,11 +302,12 @@ source ~/.git-prompt.sh
 parse_git_prompt() {
 	if [[ $(git status 2> /dev/null | tail -n1) != "" ]]
 	   then
-		if [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]]
+		if [[ ($(git status 2> /dev/null | tail -n1) == "nothing to commit, working directory clean") ||
+		($(git status 2> /dev/null | tail -n1) == "nothing to commit (working directory clean)") ]]
 		   then
-		       echo $MAGENTA$(__git_ps1)"*"
-		   else
 		       echo $GREEN$(__git_ps1)
+		   else
+		       echo $MAGENTA$(__git_ps1)"*"
 		fi
 	fi
 }
