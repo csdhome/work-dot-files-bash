@@ -297,4 +297,4 @@ parse_git_branch () {
 
 source ~/.git-prompt.sh
 
-PS1="\[${BOLD}${CYAN}\]\u \[$BASE0\]at \[$CYAN\]\h \[$BASE0\]in \[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(__git_ps1 " (%s)")\[$BASE0\]\n\$ \[$RESET\]"
+PS1="\[${BOLD}${CYAN}\]\u \[$BASE0\]at \[$CYAN\]\h \[$BASE0\]in \[$BLUE\]\w \[$GREEN\]\$(__git_ps1)\[$RESET\]\n\$ \[$RESET\]"
