@@ -115,3 +115,4 @@ function git_diff() {
 }
 source ~/.git-completion.bash
 git config --global alias.last 'log -1 HEAD'
+alias chat="ssh -t chat 'bash -c ~/bin/irc'"
